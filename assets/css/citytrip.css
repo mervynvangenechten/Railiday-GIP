@@ -16,16 +16,16 @@
     font-family: 'Ubuntu', 'sans serif';
     font-size: 0.7rem;
     font-weight: 300;
-    color: rgb(175,175,175);
+    color: rgb(150,150,150);
 }
 
 hr {
     border: none;
-    height: 10px;
+    height: 12.5px;
 }
 
 section#welkom {
-    margin-bottom: 12.5px;
+    margin-bottom: 10px;
 }
 
 section#gallery-laptop {
