@@ -151,6 +151,12 @@ nav ul.nav-list li a:hover {
     }
 }
 
+@media screen and (max-width: 768px) {
+    .title-box-no-banner {
+        height: 22.5vh;
+    }
+}
+
 footer {
     width: 100%;
     margin-top: 5px;
@@ -198,6 +204,7 @@ footer .footer-bottom ul {
     list-style-type: none;
     justify-content: space-between;
     margin-bottom: 20px;
+    margin-left: 0px;
 }
 
 footer .footer-bottom ul li a {
