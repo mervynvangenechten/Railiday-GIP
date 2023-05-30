@@ -28,6 +28,14 @@ section#welkom {
     margin-bottom: 10px;
 }
 
+section#over {
+    margin-bottom: 25px;
+}
+
+section#dag-1, section#dag-2, section#dag-3, section#dag-4, section#dag-5, section#dag-6, section#dag-7, section#dag-8, section#dag-9, section#dag-10, section#dag-11, section#dag-12 {
+    margin-bottom: 25px;
+}
+
 section#gallery-laptop {
     display: flex;
     width: 100%;
