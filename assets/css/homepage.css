@@ -1,4 +1,8 @@
 /* ROUTEPLANNER */
+section#route-planner {
+    margin-bottom: 40px;
+}
+
 .hp-route-planner-box {
     width: 100%;
     margin-top: -8vh;
@@ -45,6 +49,7 @@
     text-decoration: none;
     background-color: rgb(138,203,193);
     transition: all 0.3s ease-in-out;
+    border-radius: 5px;
 }
 
 .hp-route-planner-box a.plan-trip:hover {
@@ -52,7 +57,7 @@
     color: rgb(255,255,255);
 }
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 576px) { 
     .hp-route-planner-title {
         font-size: 1.55rem;
     }
@@ -70,4 +75,212 @@
     .hp-route-planner-box a.plan-trip {
         font-size: 0.95rem;
     }
+}
+
+
+/* NIEUWS */
+section#nieuws {
+    width: 100%;
+    display: flex;
+    padding-bottom: 30px;
+    justify-content: space-between;
+}
+
+a.news-box {
+    width: 48%;
+    height: 50vh;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+a.news-box .news-box-overlay {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    padding-left: 15px;
+    padding-bottom: 20px;
+    font-size: 1.1rem;
+    background-color: rgba(0,0,0,0.4);
+    color: rgb(255,255,255);
+    border-radius: 10px;
+    justify-content: flex-end;
+    transition: all 0.3s ease-in-out;
+}
+
+a.news-box:hover .news-box-overlay {
+    padding-bottom: 32.5px;
+}
+
+a.news-box .news-box-overlay b {
+    font-family: 'Figtree', 'sans serif';
+    font-size: 1.7rem;
+    font-weight: 500;
+}
+
+@media screen and (max-width:576px) {
+    section#nieuws {
+        flex-direction: column;
+    }
+
+    a.news-box {
+        width: 100%;
+        height: 150px;
+        margin-bottom: 15px;
+    }
+
+    a.news-box .news-box-overlay {
+        padding-left: 10px;
+        padding-right: 5px;
+        padding-bottom: 10px;
+    }
+
+    a.news-box:hover .news-box-overlay {
+        padding-bottom: 10px;
+    }
+}
+
+
+/* POPULAIRE BESTEMMINGEN */
+section#popular {
+    width: 100%;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: rgb(225,225,225);
+}
+
+section#popular b {
+    font-family: 'Figtree', 'sans serif';
+    font-size: 2rem;
+    font-weight: 500;
+    color: rgb(45,46,131);
+}
+
+.destination-flex {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+a.destination-box {
+    width: 15.5%;
+    height: 40vh;
+    margin-top: 10px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+a.destination-box .destination-box-overlay {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    padding-left: 10px;
+    padding-bottom: 12.5px;
+    font-size: 1.1rem;
+    background-color: rgba(0,0,0,0.4);
+    color: rgb(255,255,255);
+    border-radius: 10px;
+    justify-content: flex-end;
+    transition: all 0.3s ease-in-out;
+}
+
+a.destination-box:hover .destination-box-overlay {
+    padding-bottom: 22.5px;
+}
+
+a.destination-box .destination-box-overlay p {
+    font-family: 'Figtree', 'sans serif';
+    font-size: 1.25rem;
+    font-weight: 500;
+    color: rgb(255,255,255);
+}
+
+a.destination-box .destination-box-overlay {
+    font-size: 0.95rem;
+}
+
+@media screen and (max-width: 992px) {
+    .destination-flex {
+        overflow: hidden;
+        overflow-x: scroll;
+    }
+
+    a.destination-box {
+        min-width: 150px;
+        margin-right: 15px;
+    }
+}
+
+
+/* DAGUITSTAPPEN */
+section#why {
+    width: 100%;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+section#why b {
+    font-family: 'Figtree', 'sans serif';
+    font-size: 2rem;
+    font-weight: 500;
+    color: rgb(45,46,131);
+}
+
+.why-flex {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.why-box {
+    width: 32%;
+    height: 200px;
+    margin-top: 10px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+}
+
+.why-box .why-box-overlay {
+    user-select: none;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    padding-left: 12.5px;
+    padding-right: 12.5px;
+    padding-bottom: 15px;
+    font-family: 'Figtree', 'sans serif';
+    font-weight: 500;
+    font-size: 1.5rem;
+    background-color: rgba(0,0,0,0.4);
+    color: rgb(255,255,255);
+    border-radius: 10px;
+    justify-content: flex-end;
+    transition: all 0.3s ease-in-out;
+}
+
+.why-box:hover .why-box-overlay {
+    background-color: rgba(0,0,0,0.6);
+}
+
+.why-box .why-box-overlay p {
+    visibility: hidden;
+    height: 0px;
+    font-family: 'Karla', 'sans serif';
+    font-weight: 400;
+    font-size: 1rem;
+    color: rgba(255,255,255,0);
+    transition: all 0.3s ease-in-out;
+}
+
+.why-box:hover .why-box-overlay p {
+    visibility: inherit;
+    height: 90px;
+    color: rgb(255,255,255);
 }

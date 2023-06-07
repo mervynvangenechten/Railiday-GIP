@@ -52,6 +52,11 @@ h2 {
     color: rgb(45,46,131);
 }
 
+.flex {
+    display: flex;
+    flex-direction: row;
+}
+
 @media screen and (max-width: 992px) {
     section {
         padding-left: 7.5%;
