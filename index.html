@@ -11,21 +11,79 @@
     <link rel="stylesheet" href="assets/css/homepage.css">
     <link rel="stylesheet" href="assets/css/navigation.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
-    <script src="https://kit.fontawesome.com/bf37516dbe.js" crossorigin="anonymous"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
-    <script src="assets/js/script.js"></script>
 </head>
 
 <body>
     <header style="background-image:url(img/RhB/Regionalzug-im-Prättigau.jpg);">
         <nav>
+            <a href="index.html">
+                <img src="assets/Railday_Origineel.svg">
+            </a>
+
+            <ul>
+                <li><a href="">Reizen</a></li>
+                <li><a href="">Tickets</a></li>
+                <li><a href="">Over ons</a></li>
+                <li><a href="">Contact</a></li>
+            </ul>
+
+            <a class="nav-book" href="contact/boeking.html">
+                Boeken
+            </a>
+
+            <div class="mobile-nav">
+                <span class="mobile-nav-link" onclick="openNav()">
+                    <i class="fa-solid fa-bars"></i>
+                </span>
+                <div id="myNav" class="nav-overlay">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                    <div class="nav-overlay-content">
+                        <a href="">Reizen</a>
+                        <a href="">Tickets</a>
+                        <a href="">Over ons</a>
+                        <a href="">Contact</a>
+                    </div>
+                </div>
+            </div>
         </nav>
     </header>
+
+
+    <main>
+        <section id="route-planner">
+            <div class="hp-route-planner-box">
+                <div class="hp-route-planner-title">
+                    Waar gaat de reis heen?
+                </div>
+
+                <form>
+                    <input type="text" id="start-station" placeholder="Vertrekstation">
+                    <input type="text" id="end-station" placeholder="Eindstation">
+                </form>
+
+                <a class="plan-trip" href="https://fahrplan.oebb.at/webapp/" target="_blank">
+                    En we zijn weg!
+                </a>
+            </div>
+        </section>
+
+
+        <section id="kijker">
+            a
+        </section>
+    </main>
+
+
+    <footer>
+
+    </footer>
+
+    <div style="height:200vh"></div>
 </body>
 
-<script>
-    AOS.init();
-</script>
+<script src="https://kit.fontawesome.com/bf37516dbe.js" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+<script src="assets/js/script.js"></script>
 
 </html>
