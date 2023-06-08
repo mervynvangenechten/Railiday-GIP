@@ -303,7 +303,7 @@ section#why b {
 }
 
 
-/* INTERRAIL */
+/* INTERRAIL & RONDREIZEN */
 section#interrail {
     display: flex;
     width: 100%;
@@ -313,12 +313,24 @@ section#interrail {
     align-items: center;
 }
 
-section#interrail .interrail-flex-item {
+section#railtour {
+    display: flex;
+    width: 100%;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    align-items: center;
+}
+
+section#interrail .interrail-flex-item, section#railtour .railtour-flex-item {
     width: 50%;
     font-size: 1.1rem;
 }
 
-section#interrail .interrail-flex-item b {
+section#railtour .railtour-flex-item {
+    text-align: right;
+}
+
+section#interrail .interrail-flex-item b, section#railtour .railtour-flex-item b {
     font-family: 'Figtree', 'sans serif';
     font-size: 3.4rem;
     font-weight: 500;
@@ -326,7 +338,7 @@ section#interrail .interrail-flex-item b {
     line-height: 3.65rem;
 }
 
-section#interrail .interrail-flex-item a {
+section#interrail .interrail-flex-item a, section#railtour .railtour-flex-item a {
     display: block;
     width: max-content;
     padding-top: 5px;
@@ -340,33 +352,41 @@ section#interrail .interrail-flex-item a {
     transition: all 0.25s ease-in-out;
 }
 
-section#interrail .interrail-flex-item a:hover {
+section#railtour .railtour-flex-item a {
+    margin-left: auto;
+}
+
+section#interrail .interrail-flex-item a:hover, section#railtour .railtour-flex-item a:hover {
     background-color: rgb(45,46,131);
     color: rgb(255,255,255);
 }
 
-section#interrail .interrail-flex-item img {
+section#interrail .interrail-flex-item img, section#railtour .railtour-flex-item img {
     border-radius: 12.5px;
 }
 
 @media screen and (max-width: 768px) {
-    section#interrail {
+    section#interrail, section#railtour {
         flex-direction: column-reverse;
     }
 
-    section#interrail .interrail-flex-item {
+    section#interrail .interrail-flex-item, section#railtour .railtour-flex-item {
         width: 100%;
         text-align: center;
+    }
+
+    section#railtour .railtour-flex-item {
+        padding-bottom: 15px;
     }
 }
 
 @media screen and (max-width: 576px) {
-    section#interrail .interrail-flex-item b {
+    section#interrail .interrail-flex-item b, section#railtour .railtour-flex-item b {
         font-size: 2.5rem;
         line-height: 2.7rem;
     }
 
-    section#interrail .interrail-flex-item a {
+    section#interrail .interrail-flex-item a, section#railtour, .railtour-flex-item a {
         margin-left: auto;
         margin-right: auto;
     }
