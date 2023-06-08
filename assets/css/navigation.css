@@ -29,6 +29,7 @@ nav ul {
 nav ul li {
     margin-left: 30px;
     margin-right: 30px;
+    list-style-type: none;
 }
 
 nav ul li a {
@@ -72,6 +73,67 @@ nav .mobile-nav {
 :target {
     padding-top: 12vh;
     margin-top: -12vh;
+}
+
+
+footer {
+    width: 100%;
+    height: max-content;
+    margin-top: 25px;
+}
+
+footer .footer-top {
+    padding-left: 12.5%;
+    padding-right: 12.5%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-family: 'Karla', 'sans serif';
+    font-size: 0.75rem;
+    background-color: rgb(225,225,225);
+}
+
+footer .footer-top b {
+    font-family: 'Figtree', 'sans serif';
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+footer .footer-bottom {
+    padding-left: 12.5%;
+    padding-right: 12.5%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 0.75rem;
+    background-color: rgb(191,191,191);
+    text-align: center;
+}
+
+footer .footer-bottom a img {
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+footer .footer-bottom ul {
+    display: flex;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    list-style-type: none;
+    justify-content: space-between;
+}
+
+footer .footer-bottom ul li {
+    margin-left: 0px;
+    list-style-type: none;
+}
+
+footer .footer-bottom ul li a {
+    font-size: 0.9rem;
+    text-decoration: none;
+}
+
+footer .footer-bottom ul li a:hover {
+    text-decoration: underline;
 }
 
 
@@ -140,8 +202,35 @@ nav .mobile-nav {
         font-size: 60px;
     }
 
+    footer .footer-top, footer .footer-bottom {
+        padding-left: 7.5%;
+        padding-right: 7.5%;
+    }
+
     :target {
         padding-top: 9vh;
         margin-top: -9vh;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    footer .footer-top, footer .footer-bottom {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    footer .footer-bottom a img {
+        width: 60%;
+    }
+    
+    footer .footer-bottom ul {
+        flex-direction: column;
+    }
+
+    footer .footer-bottom ul li {
+        margin-top: 2.5px;
+        margin-bottom: 2.5px;
     }
 }

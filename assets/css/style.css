@@ -19,15 +19,31 @@ html {
     scroll-behavior: smooth;
 }
 
+table {
+    table-layout: fixed;
+    border-collapse: collapse;
+}
+
 
 /* LAY-OUT */
 header {
     display: flex;
     width: 100%;
-    height: 100vh;
+    height: 87.5vh;
     background-size: cover;
     background-position: center;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
     justify-content: center;
+}
+
+.title-box {
+    display: flex;
+    width: 100%;
+    height: 12.5vh;
+    padding-left: 12.5%;
+    padding-right: 12.5%;
+    align-items: center;
 }
 
 section {
@@ -45,6 +61,23 @@ b {
     font-weight: 500;
 }
 
+li {
+    margin-left: 45px;
+    list-style-type: square;
+}
+
+.flex {
+    display: flex;
+    flex-direction: row;
+}
+
+h1 {
+    font-family: 'Figtree', 'sans serif';
+    font-size: 3.5rem;
+    font-weight: 500;
+    color: rgb(45,46,131);
+}
+
 h2 {
     font-family: 'Figtree', 'sans serif';
     font-size: 2.5rem;
@@ -52,9 +85,18 @@ h2 {
     color: rgb(45,46,131);
 }
 
-.flex {
-    display: flex;
-    flex-direction: row;
+h3 {
+    font-family: 'Figtree', 'sans serif';
+    font-size: 2.15rem;
+    font-weight: 500;
+    color: rgb(45,46,131);
+}
+
+h4 {
+    font-family: 'Figtree', 'sans serif';
+    font-size: 1.8rem;
+    font-weight: 500;
+    color: rgb(138, 203, 193);
 }
 
 @media screen and (max-width: 992px) {
@@ -68,5 +110,13 @@ h2 {
     section {
         padding-left: 5%;
         padding-right: 5%;
+    }
+
+    h1 {
+        font-size: 3rem;
+    }
+
+    h2 {
+        font-size: 2rem;
     }
 }
