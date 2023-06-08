@@ -62,6 +62,7 @@ nav a.nav-book {
 nav a.nav-book:hover {
     background-color: rgb(45,46,131);
     color: rgb(255,255,255);
+    border-radius: 7.5px;
 }
 
 nav .mobile-nav {
