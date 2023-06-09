@@ -119,12 +119,21 @@ section#t-trip {
 section#t-trip .t-trip-box {
     display: flex;
     width: 100%;
-    height: 100%;
+    height: max-content;
     margin-top: 20px;
     margin-bottom: 20px;
     align-items: center;
     justify-content: space-between;
 }
+
+section#t-trip .t-trip-box .t-trip-box-img {
+    width: 38%;
+}
+
+section#t-trip .t-trip-box .t-trip-box-img img {
+    border-radius: 15px;
+}
+
 
 section#t-trip .t-trip-box .t-trip-box-text {
     width: 58%;
@@ -141,4 +150,29 @@ section#t-trip .t-trip-box .t-trip-box-text b {
 section#t-trip .t-trip-box .t-trip-box-text hr {
     border: none;
     height: 10px;
+}
+
+@media screen and (max-width: 768px) {
+    section#t-welkom, section#t-trip {
+        flex-direction: column;
+    }
+    
+    section#t-welkom .t-welkom-text, section#t-trip .t-trip-box .t-trip-box-text {
+        width: 100%;
+        padding-left: 0px;
+    }
+
+    section#t-welkom .t-welkom-map, section#t-trip .t-trip-box .t-trip-box-img {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    section#t-attractions .t-attractions-box, section#t-hotel .t-hotel-box {
+        flex-direction: column-reverse;
+    }
+
+    section#t-attractions .t-attractions-box .t-attractions-text, section#t-attractions .t-attractions-box .t-attractions-photo, section#t-hotel .t-hotel-box .t-hotel-img, section#t-hotel .t-hotel-box .t-hotel-text {
+        width: 100%;
+    }
 }

@@ -100,14 +100,14 @@ h4 {
 }
 
 @media screen and (max-width: 992px) {
-    section {
+    section, .title-box {
         padding-left: 7.5%;
         padding-right: 7.5%;
     }
 }
 
 @media screen and (max-width: 768px) {
-    section {
+    section, .title-box {
         padding-left: 5%;
         padding-right: 5%;
     }

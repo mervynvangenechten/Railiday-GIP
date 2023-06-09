@@ -4,6 +4,7 @@ header.hp-header {
     height: 100vh;
     background-size: cover;
     background-position: center;
+    border-radius: 0px;
     justify-content: center;
 }
 
