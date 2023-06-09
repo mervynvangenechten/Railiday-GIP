@@ -78,8 +78,8 @@ section#t-attractions .t-attractions-box .t-attractions-photo img {
 /* ACCOMMODATIE */
 section#t-hotel {
     width: 100%;
-    margin-top: 30px;
-    margin-bottom: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
 section#t-hotel .t-hotel-box {
@@ -150,6 +150,13 @@ section#t-trip .t-trip-box .t-trip-box-text b {
 section#t-trip .t-trip-box .t-trip-box-text hr {
     border: none;
     height: 10px;
+}
+
+
+/* PRIJZEN EN INFO */
+section#t-prices {
+    padding-top: 30px;
+    padding-bottom: 20px;
 }
 
 @media screen and (max-width: 768px) {
