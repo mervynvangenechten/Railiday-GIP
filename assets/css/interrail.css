@@ -201,6 +201,10 @@ section#buy {
     padding-top: 30px;
 }
 
+section#buy .tablet, section#buy .mobile {
+    display: none;
+}
+
 section#buy .buy-box {
     width: 100%;
     margin-top: 15px;
@@ -209,7 +213,7 @@ section#buy .buy-box {
     justify-content: space-between;
 }
 
-section#buy .buy-box .interrail-buy-box {
+.interrail-buy-box {
     width: 19%;
     padding: 7.5px;
     background-color: rgb(45,46,131);
@@ -218,34 +222,34 @@ section#buy .buy-box .interrail-buy-box {
     text-align: center;
 }
 
-section#buy .buy-box .interrail-buy-box img {
+.interrail-buy-box img {
     width: 70%;
     margin-left: auto;
     margin-right: auto;
 }
 
-section#buy .buy-box .interrail-buy-box .validity {
+.interrail-buy-box .validity {
     margin-top: 30px;
     margin-bottom: 30px;
 }
 
-section#buy .buy-box .interrail-buy-box .validity b {
+.interrail-buy-box .validity b {
     font-size: 1.9rem;
     font-weight: 500;
 }
 
-section#buy .buy-box .interrail-buy-box .price {
+.interrail-buy-box .price {
     margin-bottom: 12.5px;
     font-size: 0.9rem;
 }
 
-section#buy .buy-box .interrail-buy-box .price b {
+.interrail-buy-box .price b {
     font-family: 'Figtree', 'sans serif';
     font-size: 1.5rem;
     font-weight: 500;
 }
 
-section#buy .buy-box .interrail-buy-box a.buy {
+.interrail-buy-box a.buy {
     width: 80%;
     margin-left: auto;
     margin-right: auto;
@@ -260,4 +264,74 @@ section#buy .buy-box .interrail-buy-box a.buy {
     color: rgb(45,46,131);
     background-color: rgb(255,255,255);
     border-radius: 5px;
+}
+
+@media screen and (max-width: 1231px) {
+    section#buy .laptop {
+        display: none;
+    }
+
+    section#buy .tablet {
+        display: unset;
+    }
+
+    section#buy .tablet .buy-box-4 {
+        display: flex;
+        width: 100%;
+        margin-top: 15px;
+        margin-bottom: 30px;
+        justify-content: space-between;
+    }
+
+    section#buy .tablet .buy-box-3 {
+        display: flex;
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 15px;
+        margin-bottom: 30px;
+        justify-content: space-between;
+    }
+
+    .buy-box-4 .interrail-buy-box {
+        width: 23%;
+    }
+
+    .buy-box-3 .interrail-buy-box {
+        width: 31%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    section#buy .tablet {
+        display: none;
+    }
+
+    section#buy .mobile {
+        display: unset;
+    }
+
+    .interrail-buy-box {
+        width: 48%;
+    }
+
+    .interrail-buy-box .validity {
+        font-size: 0.85rem;
+    }
+
+    .interrail-buy-box .validity b {
+        font-size: 1.425rem;
+    }
+
+    .interrail-buy-box .price {
+        font-size: 0.75rem;
+    }
+
+    .interrail-buy-box .price b {
+        font-size: 1.225rem;
+    }
+
+    .interrail-buy-box a.buy {
+        font-size: 1rem;
+    }
 }
