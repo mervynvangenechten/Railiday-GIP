@@ -108,6 +108,13 @@ h4 {
     color: rgb(138, 203, 193);
 }
 
+h5 {
+    font-family: 'Figtree', 'sans serif';
+    font-size: 1.55rem;
+    font-weight: 400;
+    color: rgb(0,0,0);
+}
+
 @media screen and (max-width: 992px) {
     section, .title-box {
         min-height: 12.5vh;

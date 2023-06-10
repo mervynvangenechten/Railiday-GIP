@@ -1,0 +1,85 @@
+section#contact {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+section#contact .contact-form {
+    width: 63%;
+    padding-top: 5px;
+}
+
+section#contact form {
+    margin-top: 5px;
+}
+
+input[type="text"], textarea {
+    width: 100%;
+    padding-top: 2.5px;
+    padding-bottom: 2.5px;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-family: 'Karla', 'sans serif';
+    font-size: 0.95rem;
+    border: 1.5px solid rgb(191,191,191);
+    border-radius: 5px;
+}
+
+textarea {
+    height: 150px;
+    line-height: 1.1rem;
+    overflow: visible;
+    resize: none;
+}
+
+input[type="submit"] {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 7.5px;
+    padding-right: 7.5px;
+    margin-top: 5px;
+    font-family: 'Karla', 'sans serif';
+    font-size: 1.025rem;
+    font-weight: 500;
+    background-color: rgb(138,203,193);
+    color: rgb(0,0,0);
+    border: none;
+    cursor: pointer;
+}
+
+section#contact .mechelen {
+    width: 33%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: center;
+    background-color: rgb(225,225,225);
+    border-radius: 7.5px;
+}
+
+section#contact .mechelen h4 {
+    color: rgb(45,46,131);
+}
+
+section#contact .mechelen img {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border-radius: 15px;
+}
+
+section#contact .mechelen b {
+    font-family: 'Figtree', 'sans serif';
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+section#contact .mechelen TABLE {
+    width: max-content;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 0.925rem;
+    text-align: left;
+}
