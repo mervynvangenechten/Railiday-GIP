@@ -182,4 +182,8 @@ section#t-prices {
     section#t-attractions .t-attractions-box .t-attractions-text, section#t-attractions .t-attractions-box .t-attractions-photo, section#t-hotel .t-hotel-box .t-hotel-img, section#t-hotel .t-hotel-box .t-hotel-text {
         width: 100%;
     }
+
+    section#t-hotel .t-hotel-box .t-hotel-img {
+        margin-bottom: 5px;
+    }
 }
