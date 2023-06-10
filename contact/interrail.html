@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Railiday">
+    <title>Interrail kopen | Railiday</title>
+    <link rel="icon" href="../assets/Railiday_Vorm.svg">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/contact.css">
+    <link rel="stylesheet" href="../assets/css/navigation.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+</head>
+
+<body>
+    <header style="background-image:url(../img/RhB/Regionalzug-im-Prättigau-2.jpg);">
+        <nav>
+            <a href="../index.html">
+                <img src="../assets/Railday_Origineel.svg">
+            </a>
+
+            <ul>
+                <li><a href="../reizen/index.html">Reizen</a></li>
+                <li><a href="../interrail/index.html">Interrail</a></li>
+                <li><a href="../over-ons/index.html">Over ons</a></li>
+                <li><a href="../contact/index.html">Contact</a></li>
+            </ul>
+
+            <a class="nav-book" href="../contact/boeking.html">
+                Boeken
+            </a>
+
+            <div class="mobile-nav">
+                <span class="mobile-nav-link" onclick="openNav()">
+                    <i class="fa-solid fa-bars"></i>
+                </span>
+                <div id="myNav" class="nav-overlay">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                    <div class="nav-overlay-content">
+                        <a href="../reizen/index.html">Reizen</a>
+                        <a href="../interrail/index.html">Interrail</a>
+                        <a href="../over-ons/index.html">Over ons</a>
+                        <a href="../contact/index.html">Contact</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+    <main>
+        <div class="title-box">
+            <h1>Interrail</h1>
+        </div>
+
+        <section id="interrail-form">
+            Gelieve voor iedere reiziger afzonderlijk een formulier in te vullen.<br>
+            <form action="mailto:mervynvangenechten@gmail.com" method="post" enctype="text/plain">
+                <input type="text" name="Naam" placeholder="Naam*" required>
+                <input type="text" name="Email" placeholder="Email*" required>
+                <input type="text" name="Telefoon" placeholder="Telefoonnummer">
+                <div style="height:5px"></div>
+                <select id="age" name="leeftijd" required>
+                    <option selected="true" disabled>Kies leeftijdscategorie (op moment van de reis)*</option>
+                    <option value="-12">-12 jaar</option>
+                    <option value="12-26">12 t.e.m. 26 jaar</option>
+                    <option value="27-64">27 t.e.m. 64 jaar</option>
+                    <option value="65+">65+ jaar</option>
+                </select>
+    
+                <hr>
+    
+                <label for="pas">Keuze van Interrail-pas*</label>
+                <select id="pas" name="paskeuze" required>
+                    <option selected="true" disabled>Kies je Interrail-pas</option>
+                    <optgroup label="Flexi Pass">
+                        <option value="4 dagen 1 maand">4 dagen binnen 1 maand</option>
+                        <option value="5 dagen 1 maand">5 dagen binnen 1 maand</option>
+                        <option value="7 dagen 1 maand">7 dagen binnen 1 maand</option>
+                        <option value="10 dagen 2 maanden">10 dagen binnen 2 maanden</option>
+                        <option value="15 dagen 2 maanden">15 dagen binnen 2 maanden</option>
+                    </optgroup>
+                    <optgroup label="Continuous Pass">
+                        <option value="15 dagen">15 dagen</option>
+                        <option value="22 dagen">22 dagen</option>
+                        <option value="1 maand">1 maand</option>
+                        <option value="2 maanden">2 maanden</option>
+                        <option value="3 maanden">3 maanden</option>
+                    </optgroup>
+                </select>
+
+                <label for="Klasse">Reisklasse*</label>
+                <select id="Klasse" required>
+                    <option selected="true" disabled>Kies de reisklasse</option>
+                    <option value="1e klasse">1e klasse</option>
+                    <option value="2e klasse">2e klasse</option>
+                </select>
+
+                <input type="submit" value="Verzenden">
+            </form>
+        </section>
+    </main>
+
+
+    <footer>
+        <div class="footer-top">
+            <b>Gebruikte afbeeldingen:</b><br>
+            © Andrea Badrutt
+        </div>
+        <div class="footer-bottom">
+            <a href="../index.html">
+                <img src="../assets/Railday_Origineel.svg">
+            </a>
+
+            <ul>
+                <li><a href="../legaal/disclaimer.html">Disclaimer</a></li>
+                <li><a href="../legaal/algemene-voorwaarden.html">Algemene voorwaarden</a></li>
+                <li><a href="../legaal/bijzondere-voorwaarden.html">Bijzondere voorwaarden</a></li>
+                <li><a href="../legaal/privacybeleid.html">Privacybeleid</a></li>
+            </ul>
+
+            © Railiday, 2022 - 2023<br>
+            Webdesign: Mervyn Vangenechten<br>
+        </div>
+    </footer>
+</body>
+
+<script src="https://kit.fontawesome.com/bf37516dbe.js" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+<script src="../assets/js/script.js"></script>
+
+</html>
