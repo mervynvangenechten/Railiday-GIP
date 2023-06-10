@@ -1,3 +1,80 @@
+/* POPULAIRE BESTEMMINGEN */
+section#t-overview-laptop {
+    width: 100%;
+    padding-bottom: 30px;
+    margin-top: 10px;
+}
+
+section#t-overview-mobile {
+    width: 100%;
+    padding-bottom: 30px;
+    display: none;
+}
+
+.destination-flex {
+    width: 100%;
+    display: flex;
+    margin-bottom: 15px;
+    justify-content: space-between;
+}
+
+a.destination-box {
+    width: 32%;
+    height: 40vh;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+a.destination-box .destination-box-overlay {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    padding-left: 10px;
+    padding-bottom: 12.5px;
+    font-size: 1.25rem;
+    background-color: rgba(0,0,0,0.4);
+    color: rgb(255,255,255);
+    border-radius: 10px;
+    justify-content: flex-end;
+    transition: all 0.3s ease-in-out;
+}
+
+a.destination-box:hover .destination-box-overlay {
+    padding-bottom: 22.5px;
+}
+
+a.destination-box .destination-box-overlay p {
+    font-family: 'Figtree', 'sans serif';
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: rgb(255,255,255);
+}
+
+a.destination-box .destination-box-overlay {
+    font-size: 0.95rem;
+}
+
+@media screen and (max-width: 576px) {
+    section#t-overview-laptop {
+        display: none;
+    }
+
+    section#t-overview-mobile {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    a.destination-box {
+        width: 48%;
+    }
+}
+
+
 /* WELKOM */
 section#t-welkom {
     display: flex;

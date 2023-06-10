@@ -37,6 +37,10 @@ header {
     justify-content: center;
 }
 
+header.no-banner {
+    height: 15vh;
+}
+
 .title-box {
     display: flex;
     width: 100%;
@@ -64,6 +68,11 @@ b {
 li {
     margin-left: 40px;
     list-style-type: square;
+}
+
+hr {
+    height: 15px;
+    border: none;
 }
 
 .flex {
@@ -101,13 +110,21 @@ h4 {
 
 @media screen and (max-width: 992px) {
     section, .title-box {
+        min-height: 15vh;
+        height: max-content;
         padding-left: 7.5%;
         padding-right: 7.5%;
+    }
+
+    header.no-banner {
+        height: 10vh;
     }
 }
 
 @media screen and (max-width: 768px) {
     section, .title-box {
+        min-height: 15vh;
+        height: max-content;
         padding-left: 5%;
         padding-right: 5%;
     }
