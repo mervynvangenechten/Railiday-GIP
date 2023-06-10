@@ -1,0 +1,263 @@
+/* WAT*/
+section#what {
+    width: 100%;
+    display: flex;
+    padding-bottom: 30px;
+    align-items: center;
+    justify-content: space-between
+}
+
+section#what .what-img {
+    width: 28%;
+}
+
+section#what .what-img img {
+    border-radius: 15px;
+}
+
+section#what .what-text {
+    width: 68%;
+}
+
+@media screen and (max-width: 992px) {
+    section#what .what-img {
+        width: 38%;
+    }
+
+    section#what .what-text {
+        width: 58%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    section#what {
+        flex-direction: column;
+    }
+
+    section#what .what-img {
+        height: 0px;
+        display: none;
+    }
+
+    section#what .what-text {
+        width: 100%;
+    }
+}
+
+
+/* REISDAGEN */
+section#days {
+    width: 100%;
+    display: flex;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: rgb(225,225,225);
+    align-items: center;
+    justify-content: space-between;
+}
+
+section#days .days-text {
+    width: 63%;
+}
+
+section#days .days-img {
+    width: 33%;
+    height: auto;
+}
+
+section#days .days-img img {
+    border-radius: 15px;
+}
+
+@media screen and (max-width: 768px) {
+    section#days {
+        flex-direction: column;
+    }
+
+    section#days .days-text {
+        width: 100%;
+    }
+
+    section#days .days-img {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    section#days .days-img {
+        display: unset;
+        width: 100%;
+        margin-top: 10px;
+    }
+}
+
+
+/* EIGEN LAND */
+section#own-country {
+    width: 100%;
+    display: flex;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+section#own-country .own-country-img {
+    width: 28%;
+}
+
+section#own-country .own-country-img img {
+    border-radius: 15px;
+}
+
+section#own-country .own-country-text {
+    width: 68%;
+}
+
+@media screen and (max-width: 992px) {
+    section#own-country .own-country-img {
+        width: 38%;
+    }
+
+    section#own-country .own-country-text {
+        width: 58%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    section#own-country {
+        flex-direction: column;
+    }
+
+    section#own-country .own-country-img {
+        height: 0px;
+        display: none;
+    }
+
+    section#own-country .own-country-text {
+        width: 100%;
+    }
+}
+
+
+/* LANDEN */
+section#countries {
+    width: 100%;
+    display: flex;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: rgb(225,225,225);
+    align-items: center;
+    justify-content: space-between;
+}
+
+section#countries .countries-text {
+    width: 63%;
+}
+
+section#countries .countries-text .countries-text-box {
+    display: flex;
+    width: 100%;
+}
+
+section#countries ul li {
+    margin-left: 15px;
+}
+
+section#countries .countries-img {
+    width: 33%;
+}
+
+section#countries .countries-img img {
+    border-radius: 15px;
+}
+
+@media screen and (max-width: 768px) {
+    section#countries {
+        flex-direction: column;
+    }
+
+    section#countries .countries-text {
+        width: 100%;
+    }
+
+    section#countries .countries-img {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    section#countries .countries-img {
+        display: unset;
+        width: 100%;
+        margin-top: 10px;
+    }
+}
+
+
+/* KOOP */
+section#buy {
+    width: 100%;
+    padding-top: 30px;
+}
+
+section#buy .buy-box {
+    width: 100%;
+    margin-top: 15px;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+section#buy .buy-box .interrail-buy-box {
+    width: 19%;
+    padding: 7.5px;
+    background-color: rgb(45,46,131);
+    color: rgb(255,255,255);
+    border-radius: 15px;
+    text-align: center;
+}
+
+section#buy .buy-box .interrail-buy-box img {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+section#buy .buy-box .interrail-buy-box .validity {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+section#buy .buy-box .interrail-buy-box .validity b {
+    font-size: 1.9rem;
+    font-weight: 500;
+}
+
+section#buy .buy-box .interrail-buy-box .price {
+    margin-bottom: 12.5px;
+    font-size: 0.9rem;
+}
+
+section#buy .buy-box .interrail-buy-box .price b {
+    font-family: 'Figtree', 'sans serif';
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+section#buy .buy-box .interrail-buy-box a.buy {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 25px;
+    padding-top: 2.5px;
+    padding-bottom: 2.5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 1.1rem;
+    font-weight: 400;
+    text-decoration: none;
+    color: rgb(45,46,131);
+    background-color: rgb(255,255,255);
+    border-radius: 5px;
+}

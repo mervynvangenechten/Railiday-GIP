@@ -110,7 +110,7 @@ h4 {
 
 @media screen and (max-width: 992px) {
     section, .title-box {
-        min-height: 15vh;
+        min-height: 12.5vh;
         height: max-content;
         padding-left: 7.5%;
         padding-right: 7.5%;
@@ -123,7 +123,7 @@ h4 {
 
 @media screen and (max-width: 768px) {
     section, .title-box {
-        min-height: 15vh;
+        min-height: 12.5vh;
         height: max-content;
         padding-left: 5%;
         padding-right: 5%;
